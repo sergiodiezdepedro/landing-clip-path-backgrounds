@@ -1,0 +1,74 @@
+html {
+    @include mq-bk-extra-grande {
+        height: 100%;
+    }
+}
+
+body {
+    @include mq-bk-extra-grande {
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    font-family: $fuente-principal;
+}
+
+.contenedor--pagina {
+    margin-left: rem(5px);
+    margin-right: rem(5px);
+    @include mq-bk-extra-grande {
+        display: grid;
+        grid-template-columns: 50% auto;
+        height: auto;
+        align-self: center;
+        margin-left: rem(50px);
+        margin-right: rem(50px);
+    }
+}
+
+.contenedor--centrar {
+    @include flexbox-centrado-total;
+}
+
+.h1--titulo-pagina {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: $color-light;
+    @include mq-bk-extra-grande {
+        color: $color-corporativo;
+    }
+}
+
+.texto--destacado {
+    color: darken($color-light, 20%);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    @include mq-bk-extra-grande {
+        color: $color-alt-1;
+    }
+}
+
+.boton--continuar {
+    display: inline-block;
+    padding: .7rem 1.4rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid $color-light;
+    color: $color-light;
+    @include mq-bk-extra-grande {
+        color: $color-complementario-1;
+        border: 2px solid $color-complementario-1;
+    }
+    &:hover {
+        background-color: $color-complementario-1;
+        color: $color-light;
+    }
+}
+
+.icono--small {
+    height: rem(50px);
+    margin-bottom: .5rem;
+}

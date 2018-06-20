@@ -1,0 +1,33 @@
+block config
+    include config/config
+        - nombrePagina = 'Clip-Path Backgrounds'
+doctype html
+html(lang="es")
+    include includes/head
+    body
+        .bg1
+        .bg2 
+        .contenedor--pagina
+            .izquierda
+               h1.h1--titulo-pagina Acme Consultores
+               p.texto--destacado Lorem ipsum dolor sit amet consectetur
+               a.boton--continuar(href="#") Continuar
+            .derecha
+                ul.features
+                    li.features__item
+                        img(class="icono--small" src="img/logo-1.svg" alt="Icono 1")
+                        .features__contenedor
+                            h2.features__encabezado Somos
+                            p.features__texto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, quis quidem.
+                    li.features__item
+                        img(class="icono--small" src="img/logo-2.svg" alt="Icono 2")
+                        .features__contenedor
+                            h2.features__encabezado Servicios
+                            p.features__texto Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis ad omnis unde odit modi maiores.
+                    li.features__item
+                        img(class="icono--small" src="img/logo-3.svg" alt="Icono 3")
+                        .features__contenedor
+                            h2.features__encabezado Trabajos
+                            p.features__texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae recusandae repellendus, eveniet vero accusantium temporibus.
+                   
+

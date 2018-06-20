@@ -1,0 +1,26 @@
+@mixin mq-bk-cell-landscape {
+    @media screen and(min-width: $bk-cell-landscape) {
+        @content
+    }
+}
+
+;
+@mixin mq-bk-tablet {
+    @media screen and(min-width: $bk-tablet) {
+        @content
+    }
+}
+
+;
+@mixin mq-bk-grande {
+    @media screen and(min-width: $bk-grande) {
+        @content
+    }
+}
+
+;
+@mixin mq-bk-extra-grande {
+    @media screen and(min-width: $bk-extra-grande) {
+        @content
+    }
+}

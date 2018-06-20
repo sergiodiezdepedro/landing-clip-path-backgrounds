@@ -1,0 +1,5 @@
+// Esta función cuando se utiliza hay que introducir el número concreto seguido de 'px' entre paréntesis
+@function rem($elemento,$fuente-size-base: 16px){
+	$PxToRem: ($elemento /$fuente-size-base ) * 1rem;
+	@return $PxToRem;
+}
